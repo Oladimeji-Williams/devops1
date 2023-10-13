@@ -11,7 +11,8 @@ jobs:
           run: echo "welcome"
         - name: print-hello
           run: echo "hello"
-  job-1:
+  job-2:
+    needs: job-1
     runs-on: ubuntu-latest
     steps:
       - name: print-stage
