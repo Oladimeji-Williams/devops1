@@ -6,11 +6,11 @@ on:
 jobs:
   job-1:
     runs-on: ubuntu-latest
-      steps:
-        - name: print_welcome
-          run: echo "welcome"
-        - name: print-hello
-          run: echo "hello"
+    steps:
+      - name: print_welcome
+        run: echo "welcome"
+      - name: print-hello
+        run: echo "hello"
   job-2:
     needs: job-1
     runs-on: ubuntu-latest
