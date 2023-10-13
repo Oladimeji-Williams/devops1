@@ -1,0 +1,17 @@
+name: devops1-test
+on: workflow_dispatch
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+      steps:
+        - name: print_welcome
+          run: echo "welcome"
+        - name: print-hello
+          run: echo "hello"
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print-stage
+        run: echo "currently in stage in b"
+      - name: print-stage-name
+        run: echo "stage b is introduction to devops"
