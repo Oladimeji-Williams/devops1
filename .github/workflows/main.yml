@@ -1,5 +1,8 @@
 name: devops1-test
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      main
 jobs:
   job-1:
     runs-on: ubuntu-latest
